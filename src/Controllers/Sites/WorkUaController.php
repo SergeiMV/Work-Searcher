@@ -56,7 +56,10 @@ class WorkUaController implements SiteInterface
     {
         $result = [];
         for ($count = 0; $count < count($jobs['titles']); $count++) {
-            if (isset($this->lastJob[$this->user->getChatId()]) && $this->lastJob[$this->user->getChatId()] == $jobs['titles'][$count]) {
+            if (
+                isset($this->lastJob[$this->user->getChatId()]) &&
+                $this->lastJob[$this->user->getChatId()] == $jobs['titles'][$count]
+            ) {
                 break;
             }
             $result["work.ua" . $jobs['links'][$count]] = html_entity_decode($jobs['titles'][$count]);

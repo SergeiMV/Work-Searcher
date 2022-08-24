@@ -5,7 +5,8 @@
     }
   },
   "require": {
-    "guzzlehttp/guzzle": "*"
+    "guzzlehttp/guzzle": "*",
+    "vlucas/phpdotenv": "*"
   }
 }
 
