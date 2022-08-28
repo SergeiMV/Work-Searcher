@@ -17,8 +17,9 @@ docker run --rm -v $(pwd):/data cytopia/phpcs --standard=PSR12 index.php src
 
 ```
 1) Write in .env your telegram bot token;
-2) Start a chat with your bot;
-3) Use the following commands:
+2) Run index.php file;
+3) Start a chat with your bot;
+4) Use the following commands:
 - '/set_position parameter1 parameter2...' to set your position;
 - '/set_parameters parameter1 parameter2...' to set additional parameters;
 - '/set_work_ua_loc parameter' to set your location, must contain of english names of cities, or 'remote'.

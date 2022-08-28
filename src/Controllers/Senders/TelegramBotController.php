@@ -21,7 +21,7 @@ class TelegramBotController
     public function send(User $user, $result)
     {
         $string = urlencode($this->arrayToString($result));
-        $this->client->request('POST', $this->mainUrl . $user->getChatId() . '&text=' . $string);
+        $this->client->request('POST', $this->mainUrl . $user->getChatId() . '&text=' . $string . '&keyboard=asd');
     }
 
     private function arrayToString(array $array): string
